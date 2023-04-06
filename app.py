@@ -52,6 +52,8 @@ def check_plag():
         plag_score = {}
         for title in keywords:
 
+            
+
             url = [r"https://en.wikipedia.org/wiki/", r"https://www.britannica.com/topic/", r"https://deletionpedia.org/en/",
                    r"https://en.citizendium.org/wiki/", r"https://www.infoplease.com/encyclopedia/science/engineering/computer/"]
 
