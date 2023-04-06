@@ -1,0 +1,70 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #16161d;
+}
+.form-container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    padding: 40px;
+    border: 2px solid rgba(0, 255, 255, 0.105);
+}
+
+.file-upload {
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 6px 12px;
+    cursor: pointer;
+    border: 3px dashed rgb(16, 181, 181);
+    border-radius: 8px;
+    color: #ccc;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file-submit {
+    background-color: #4daccb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    margin-left: 40px;
+    width:max-content;
+    padding: 6px 12px;
+    border-radius: 6px;
+    border: 3px solid #4daccb;
+    color: #16161d;
+}
+
+input[type="submit"] {
+    display: none;
+}
+
+.result-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    justify-content: center;
+    align-items: center;
+    color:cyan;
+    font-size: 24px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.result-text .result{
+    display: flex;
+    width: max-content;
+    border-radius: 4px;
+    margin: 7px;
+    padding: 5px;
+    background-color: #ccc;
+    color: #16161d;
+}
