@@ -52,8 +52,6 @@ def check_plag():
         plag_score = {}
         for title in keywords:
 
-            regex = re.compile(r'<[^>]+>')
-
             url = [r"https://en.wikipedia.org/wiki/", r"https://www.britannica.com/topic/", r"https://deletionpedia.org/en/",
                    r"https://en.citizendium.org/wiki/", r"https://www.infoplease.com/encyclopedia/science/engineering/computer/"]
 
@@ -69,7 +67,7 @@ def check_plag():
                 str_htm = ''
                 for i in doc.find_all(['p', 'h']):
                     str_htm += str(i)
-
+                regex = re.compile(r'<[^>]+>')
                 cmp_txt = regex.sub('', str_htm)
 
                 similarity = difflib.SequenceMatcher(
