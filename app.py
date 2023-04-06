@@ -74,7 +74,7 @@ def check_plag():
 
                 similarity = difflib.SequenceMatcher(
                     None, str(inp_txt), str(cmp_txt)).ratio()
-        plag_score[site] = similarity*100
+                plag_score[site] = similarity*100
 
     max_value = round(max(plag_score.values()), 4)
 
